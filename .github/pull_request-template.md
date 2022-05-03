@@ -8,14 +8,14 @@ Please include a list of all affected cards bellow, if any.
 
 ## Target environment
 
-- [ ]Staging
-- [ ]Production
+- [ ] Staging
+- [ ] Production
 
 ## Type of change 
 
 - [ ] New feature
 - [ ] Bug correction
-- [ ] Minor adds
+- [ ] Code implementation
 
 ## Organization checklist:
 
