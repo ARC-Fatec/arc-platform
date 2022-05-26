@@ -1,22 +1,23 @@
 import Vue from 'vue'
-// import VueRouter from 'vue-router'
 import App from './App.vue'
 import SignIn from './components/SignIn.vue'
 import SignUp from './components/SignUp.vue'
+import LostPassword from './components/LostPassword.vue'
+import VueRouter from './vue-router'
 
-// Vue.config.productionTip = false
+Vue.config.productionTip = false
 
-// Vue.use(VueRouter)
-
-// const router = new VueRouter ({
-//   routes: [
-//     { path: '/cadastro', component: SignUp }, //teste.com/cadastro
-//     { path: '/', component: SignIn }//teste.com
-//   ]
-// })
+const router = new VueRouter ({
+  routes: [
+    { path: '/password', component: LostPassword},
+    { path: '/cadastro', component: SignUp }, //teste.com/cadastro
+    { path: '/', component: SignIn }//teste.com
+  ]
+})
 
 new Vue({
-  // router,
+  router,
   render: h => h(App)
 }).$mount('#app')
 
+export default router
